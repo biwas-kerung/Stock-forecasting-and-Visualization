@@ -97,6 +97,35 @@ ul li a.active {
     text-decoration: underline;
     background-color: black;
 }
+/* ************jddak*********** */
+.container{
+    max-width: 550px;
+    margin: auto;
+    background-color: #fff;
+}
+p {
+    color: #4b5156
+}
+
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(66,66,106,1) 35%);
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+.header-bar a {
+    color: rgb(241, 245, 245);
+    text-decoration: none;
+}
+
 @media screen and (max-width: 768px) {
     nav {
         border-bottom: 1px solid #455468;
@@ -132,4 +161,41 @@ ul li a.active {
         display: block;
     }
 }
+/* ****************************new********************/
+    
 
+    @media screen and (max-width:320px) {
+        input[type=text],
+        input[type=password],
+        textarea {
+            border: 1px solid #757575;
+            border-radius: 5px;
+            padding: 10px;
+            width: 90%;
+        }
+
+        label {
+            padding-top: 10px !important;
+            display: block;
+        }
+
+        ::placeholder {
+            font-weight: 300;
+            opacity: 0.5;
+        }
+
+        .button {
+            border: 1px solid #757575;
+            background-color: #FFF;
+            color: #EB796F;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+}

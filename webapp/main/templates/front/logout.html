@@ -1,0 +1,11 @@
+<h1> You are now logged out {{ user }}</h1>
+
+<form method="post">
+    {% csrf_token %} 
+    <!-- prevents against Cross site Request Forgery attacks//required in every form -->
+
+    {{form.as_p}}
+
+    <input type="submit" value="Sign up">
+
+</form>
