@@ -26,13 +26,6 @@ def stock_detail(request, word):
     real_stock_price = 0
     predicted_stock_price = 0
 
-    TIME_STEP = 7
-    DAYS = 20
-
-    if(word=="Tesla"):
-        TIME_STEP=5
-
-
     if(word=="Google"):
 
         dataset_train = pd.read_csv('media/Google/Google_Stock_Price_Train.csv')

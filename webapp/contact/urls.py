@@ -1,6 +1,6 @@
-from django.conf.urls import url
+from django.urls import path
 from . import views
 
 urlpatterns = [
-    url(r'^contact/submit/$', views.contact_form, name='contact_form'),
+    path('contact/submit/', views.contact_form, name='contact_form'),
 ]
